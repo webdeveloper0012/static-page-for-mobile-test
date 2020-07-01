@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+*	{ 
+	transition:all 0.25s linear; 
+		-webkit-transition:all 0.25s linear;
+		-moz-transition:all 0.25s linear; 
+    		-o-transition:all 0.25s linear;    		
+}
+
+@media screen and (max-width: 1000px)	{
+
+/* TEXT */
+
+h3	{
+	letter-spacing:3px;
+	font-size:1em;
+}
+
+/* BODY */	
+
+.x__1-1	{
+	grid-column-gap:0px; 
+	grid-row-gap:0px;
+	padding:0px;	
+}
+	.x__1-1x1	{
+		grid-row:1; grid-column:1 / span 12;
+			-ms-grid-row:1;
+			-ms-grid-column:1; -ms-grid-column-span:12;		
+		text-align:center;
+		padding:50px;
+	}
+	.x__1-1x2	{
+		grid-row:2; grid-column:1 / span 12;
+			-ms-grid-row:2;
+			-ms-grid-column:1; -ms-grid-column-span:12;	
+		background-color:#212121;
+			-webkit-box-shadow:none;
+			-moz-box-shadow:none;
+		box-shadow:none;
+		padding:10px;
+	}
+		.x__1-1x1 .x-Height	{
+			position:static;
+			height:auto;	
+		}
+		.x__1-1x1 .x-TanslateY	{
+			-webkit-transform:none;
+			-ms-transform:none;
+				transform:none;
+			position:static;
+			top:inherit;	
+		}
+	
+}
+
+@media screen and (max-width: 800px)	{
+
+/* TEXT */
+
+h1	{
+	letter-spacing:5px;
+	font-size:5em;
+}
+	.x-h1	{
+		line-height:45px;
+	}
+
+/* HEADER */
+
+.xLink-1 > li:last-child	{
+	display:none;
+}
+.xLink-1 > li:nth-child(1):after	{
+	content:none;	
+}
+
+/* NAVIGATION */
+.xLink-2	{
+	position:absolute;
+	top:210px;
+	right: 0px;
+	overflow: hidden;
+	
+	display:-webkit-box; 
+	display:flex; 
+	display:-ms-flexbox;
+	justify-content:space-around;
+	-ms-flex-pack:distribute;  
+	-webkit-box-direction:normal; 
+	-webkit-box-orient:vertical;
+	-ms-flex-direction:column; 
+	flex-direction:column; 
+	-webkit-box-align:center; 
+	-ms-flex-align:center; 
+	align-items:center;
+	
+	transition: 0.5s;
+	
+	height:calc(100vh - 210px);	
+	background-color:#EDEAE5;
+	z-index:100;
+	width: 0;
+}
+
+.fullw {
+	width: 100%;
+}
+
+.noth {
+	width: 0%;
+}
+
+.xLink-2 li	{
+	text-align:center;
+	margin-right:0px;
+	padding-left:0px;
+	margin-bottom:10px;
+	opacity:0;
+}
+.xLink-2 li:last-child	{
+	margin-bottom:0px;
+}
+.xLink-2 > li:after	{
+	content:none;
+}
+.x-Toggle	{
+	display:block;
+	cursor:pointer;	
+}
+.x-Active	{
+	-webkit-transform:translateX(0);
+	-ms-transform:translateX(0);
+	transform:translateX(0);	
+	
+}
+}
+

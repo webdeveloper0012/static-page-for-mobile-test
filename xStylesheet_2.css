@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@font-face	{
+    font-family:'Waves';
+		src:url('fonts/waves.eot');
+		src:url('fonts/waves.eot?#iefix') format('embedded-opentype'),
+			url('fonts/waves.woff2') format('woff2'),
+			url('fonts/waves.woff') format('woff'),
+			url('fonts/waves.ttf') format('truetype'),
+			url('fonts/waves.svg#waves') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face	{
+    font-family:'Brandon Grotesque';
+		src:url('fonts/brandon-grotesque.eot');
+		src:url('fonts/brandon-grotesque.eot?#iefix') format('embedded-opentype'),
+			url('fonts/brandon-grotesque.woff2') format('woff2'),
+			url('fonts/brandon-grotesque.woff') format('woff'),
+			url('fonts/brandon-grotesque.ttf') format('truetype'),
+			url('fonts/brandon-grotesque.svg#brandon-grotesque') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face	{
+    font-family:'Brandon Grotesque Bold';
+    	src:url('fonts/brandon-grotesque[B].eot');
+    	src:url('fonts/brandon-grotesque[B].eot?#iefix') format('embedded-opentype'),
+			url('fonts/brandon-grotesque[B].woff2') format('woff2'),
+			url('fonts/brandon-grotesque[B].woff') format('woff'),
+			url('fonts/brandon-grotesque[B].ttf') format('truetype'),
+			url('fonts/brandon-grotesque[B].svg#brandon-grotesque[B]') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face	{
+	font-family:'Didot';
+		src:url('fonts/didot.eot');
+		src:url('fonts/didot.eot?#iefix') format('embedded-opentype'),
+			url('fonts/didot.woff2') format('woff2'),
+        	url('fonts/didot.woff') format('woff'),
+        	url('fonts/didot.ttf') format('truetype'),
+        	url('fonts/didot.svg#didot') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+/* BODY */
+
+body	{
+	letter-spacing:1px;	
+}
+a	{
+	display:inline-block;
+	text-decoration:none;
+}
+.xFont-1	{
+	font-family:'Brandon Grotesque';
+	letter-spacing:3px;
+	line-height:20px;
+	font-size:0.80em;
+}
+.xFont-2	{
+	font-family:'Didot';
+	letter-spacing:1.05px;
+	line-height:40px;
+	font-size:1.05em;
+}	
+		a.x-212121, a.x-212121:visited	{
+			color:#212121;	
+		}
+		a.x-D5A25B, a.x-D5A25B:visited,
+		.xHeader-2x2 a.x-212121:hover	{
+			color:#D5A25B;	
+		}
+		a.x-F8F8F8, a.x-F8F8F8:visited	{
+			color:#F8F8F8;	
+		}
+	.x-Left	{
+		text-align:left;	
+	}
+	.x-Right	{
+		text-align:right;
+	}
+	
+/* HEADING */
+
+h1	{
+	font-family:'Waves';
+	letter-spacing:6px;
+	font-size:6em;
+}
+	.x-h1	{
+		display:inline-block;
+		line-height:55px;
+		height:0px;
+	}
+h2	{
+	font-family:'Brandon Grotesque Bold';
+	letter-spacing:3px;
+	font-size:0.90em;
+}
+h3	{
+	font-family:'Brandon Grotesque Bold';
+	letter-spacing:3.25px;
+	font-size:1.25em;
+}
+
+/* BUTTON[S] */
+
+.x-Button	{
+	font-family:'Brandon Grotesque';
+	letter-spacing:3px;
+	font-size:0.80em;	
+	padding-top:10px;
+}
+.xButton-1	{
+	display:inline-block;
+	position:relative;
+	background:#BC8942;
+	padding:25px;
+	color:#FFFFFF;
+	-webkit-transform:perspective(1px) translateZ(0);
+		transform:perspective(1px) translateZ(0);
+	-webkit-transition-property:color;
+		transition-property:color;
+	-webkit-transition-duration:0.3s;
+		transition-duration:0.3s;
+}
+.xButton-1:before	{
+	content:"";
+	position:absolute;
+	z-index:-1;
+	top:0; bottom:0; left:0; right:0;
+	background:#D5A25B;
+	-webkit-transform:scaleY(1);
+		transform:scaleY(1);
+	-webkit-transform-origin:50%;
+		transform-origin:50%;
+	-webkit-transition-property:transform;
+		transition-property:transform;
+	-webkit-transition-duration:0.3s;
+		transition-duration:0.3s;
+	-webkit-transition-timing-function:ease-out;
+		transition-timing-function:ease-out;
+}
+.xButton-1:hover, .xButton-1:focus, .xButton-1:active {
+	color:white;
+}
+.xButton-1:hover:before, .xButton-1:focus:before, .xButton-1:active:before {
+	-webkit-transform:scaleY(0);
+		transform:scaleY(0);
+}
+.xItem-1 i	{
+	color:#F8F8F8;
+	text-indent:125px;
+	font-size:3em;		
+}
